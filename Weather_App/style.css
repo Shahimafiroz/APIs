@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/boy-1822614_1920.jpg) no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 30px 15%;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+  color: white;
+  font-size: small;
+}
