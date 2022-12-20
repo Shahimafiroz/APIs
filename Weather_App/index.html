@@ -14,7 +14,8 @@
       crossorigin="anonymous"
     />
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- css link -->
 
     <link rel="stylesheet" href="style.css" />
@@ -38,30 +39,44 @@
     </header>
     <!-- top end -->
     <!-- middle start -->
-    <div class="mid">
+    <div class=" square mx-auto my-auto">
       <div class="tem-loc">
-        <h1>03<span>&#176;</span></h1>
-        <h1>Iceland</h1>
-        <i class="fa-solid fa-snowflake"></i>
+        <h1>03<span class="degree">&#176;</span></h1>
+        <h2>Iceland</h2>
+        <span class="material-symbols-outlined">
+          cloudy_snowing
+        </span>
+        <!-- <i class="fa-solid fa-snowflake"></i> -->
       </div>
       <!--  -->
-      <!-- weather details Start -->
+      <div class = "both">
+        <!-- weather details Start -->
       <div class="details">
-        <p><h3>30%</h3>Cloudy</p>
-        <p><h3>19%</h3>Humidity</p>
-        <p><h3>58 Km/hr</h3>Wind</p>
+        <div clss="brum">
+           <p><h3>30%</h3>Cloudy</p>
+        </div>
+        <div clss="brum">
+          <p><h3>19%</h3>Humidity</p>
+        </div>
+        <div clss="brum">
+          <p><h3>58 Km/hr</h3>Wind</p>
+        </div>
       </div>
       <!--  -->
       <!-- search starts -->
       <div class="search">
-        <input type="text" placeholder="Search location">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="input-group mb-3 ">
+  <input type="text" class="form-control" placeholder="search location" aria-label="Username" aria-describedby="basic-addon1">
+  <span class="input-group-text material-symbols-outlined" id="basic-addon1">search</span>
+  
+</div>
       </div>
 
      
     
     
     </div>
+      </div>
     <!-- middle end -->
   </body>
 </html>

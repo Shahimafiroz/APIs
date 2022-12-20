@@ -1,12 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+
   box-sizing: border-box;
 }
 
 body {
-  background: url(images/boy-1822614_1920.jpg) no-repeat;
+  background: url(images/hhh.jpg) no-repeat;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -17,14 +17,15 @@ header {
   height: 75px;
   display: flex;
   align-items: center;
-  padding: 30px 15%;
+  padding: 60px 15%;
   justify-content: space-between;
+  font-family: "Varela Round", sans-serif;
 }
 
 .logo {
   font-size: 30px;
   font-weight: normal;
-  color: white;
+  color: #ffffff;
   letter-spacing: 2px;
   cursor: pointer;
 }
@@ -34,5 +35,99 @@ nav li {
   list-style: none;
   padding: 0px 20px;
   color: white;
-  font-size: small;
+  font-size: 14px;
+}
+
+a,
+button {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 9px 25px;
+  list-style: none;
+}
+
+.square {
+  max-width: 40rem;
+  max-height: 100vh;
+  /* border: 1px solid white; */
+  display: grid;
+  justify-content: center space-evenly;
+  align-items: center;
+  color: white;
+  padding-top: 3rem;
+  scroll-behavior: smooth;
+}
+
+.tem-loc {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0pt;
+  padding: 10px, 0px;
+}
+
+.tem-loc h1 {
+  display: flex;
+  font-size: 100px;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+}
+.degree {
+  font-size: xx-large;
+  margin: 0px;
+}
+
+.tem-loc span {
+  font-size: 100px;
+  font-weight: 200;
+}
+
+.tem-loc h2 {
+  font-size: 100px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.both {
+  margin-top: 3rem;
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgb(210, 206, 206);
+  border-left: 1px solid rgb(210, 206, 206);
+  border-bottom: black;
+  border-right: rgba(225, 225, 225, 0.1);
+  border-radius: 1rem;
+}
+.details {
+  size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 0;
+}
+.brum {
+  font-family: "Varela Round", sans-serif;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 100px;
+}
+
+.brum h3 {
+  font-size: xx-large;
+}
+.search {
+  padding: 2rem 3rem;
+}
+
+.search input {
+  border: none;
+  max-width: 20rem;
 }
