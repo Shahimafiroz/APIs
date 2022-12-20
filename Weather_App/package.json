@@ -1,0 +1,14 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "Server side live weather web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shahima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

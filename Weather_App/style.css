@@ -124,10 +124,18 @@ button {
   font-size: xx-large;
 }
 .search {
-  padding: 2rem 3rem;
+  display: flex;
+  justify-content: end;
+  max-width: 30rem;
+  margin-left: 5rem;
+  padding: 1rem 0rem 3rem;
 }
 
 .search input {
-  border: none;
-  max-width: 20rem;
+  border: 1px #ffffff solid;
+  background-color: transparent;
+}
+
+.search span {
+  cursor: pointer;
 }
