@@ -14,12 +14,15 @@ body {
 
 header {
   width: 100%;
-  height: 75px;
+  height: 40px;
   display: flex;
   align-items: center;
-  padding: 60px 15%;
+  padding: 50px 15% 30px;
   justify-content: space-between;
   font-family: "Varela Round", sans-serif;
+
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .logo {
