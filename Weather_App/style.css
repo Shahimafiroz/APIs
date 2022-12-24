@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(images/hhh.jpg) no-repeat;
+  background: url(images/ff.jpg) no-repeat;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -75,6 +75,7 @@ button {
   justify-content: space-evenly;
   margin-bottom: 0pt;
   padding: 10px, 0px;
+  text-shadow: 2px 3px #000000;
 }
 
 .tem-loc h1 {
@@ -85,7 +86,7 @@ button {
   font-family: "Poppins", sans-serif;
 }
 .degree {
-  font-size: xx-large;
+  font-size: x-large;
   margin: 0px;
 }
 
@@ -97,6 +98,12 @@ button {
 .tem-loc h2 {
   font-size: 100px;
   font-family: "Varela Round", sans-serif;
+}
+
+.des {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .both {

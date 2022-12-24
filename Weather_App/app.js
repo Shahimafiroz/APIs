@@ -29,12 +29,20 @@ app.post("/", function (req, res) {
       const temp = weather_data.main.temp;
       const des = weather_data.weather[0].description;
       const location = weather_data.name;
+      const humidity = weather_data.main.humidity;
+      const pressure = weather_data.main.pressure;
+      const wind = weather_data.wind.speed;
       const icon = weather_data.weather[0].icon;
       const iconurl = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
+
       res.write(
         "<h1>weather in " + location + " is currently " + des + " like .</h1>"
       );
+
       res.write("<h1>temperature is " + temp + "</h1>");
+      res.write("<h1>Pressure is " + pressure + "</h1>");
+      res.write("<h1>humidity is " + humidity + "</h1>");
+      res.write("<h1>wind speed is " + wind + "</h1>");
       res.write("<img src = " + iconurl + ">");
       res.send();
     });
