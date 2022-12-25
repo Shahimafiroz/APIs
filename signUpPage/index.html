@@ -1,21 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstarp cdn -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>News letter Sign Up!</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/sign-in/"
+    />
+
+    <!-- Bootstrap core CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!--  -->
-    <title>Sign up page</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <!-- form start -->
+    <link href="styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- boot java script cdn -->
+  <body class="text-center">
+    <!--  -->
+    <!-- nav bar start -->
+    <header class="p-3 bg-success text-white">
+      <div class="container justify-content-center">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none font-size-5"
+          >
+            ✨SHAHIMA✨
+          </a>
+
+          <ul
+            class="nav d-flex justify-content-center col-12 col-lg-auto me-lg-auto mb-2 mb-md-0"
+          >
+            <li>
+              <a href="index.html" class="nav-link px-6 text-white">Home</a>
+            </li>
+            <li><a href="" class="nav-link px-6 text-white">FAQs</a></li>
+            <li><a href="#" class="nav-link px-6 text-white">About</a></li>
+          </ul>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-danger">Sign-up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- nav bar end -->
+    <!--  -->
+
+    <main class="form-signin mt-5">
+      <form action="/" method="post">
+        <img
+          class="mb-4"
+          src="images/shahima2.png"
+          alt=""
+          width="72"
+          height="72"
+        />
+        <h1 class="h3 mb-3 fw-normal">Sign up to my News Letter!</h1>
+
+        <input
+          type="text"
+          class="form-control p-1 top"
+          id="firstName"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          class="form-control p-1 middle"
+          id="lastName"
+          placeholder="Last Name"
+        />
+        <input
+          type="email"
+          class="form-control p-1 bottom"
+          id="floatingInput"
+          placeholder="user@example.com"
+        />
+
+        <button class="w-100 btn btn-lg btn-success mt-5" type="submit">
+          Sign me up !
+        </button>
+        <p class="mt-5 mb-3 text-muted">&copy; Shahima the Great</p>
+      </form>
+    </main>
+    <!-- form end -->
+    <!-- js bt st -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
