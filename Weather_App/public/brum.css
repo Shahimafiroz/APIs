@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/dd.jpg) no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 50px 15% 30px;
+  justify-content: space-between;
+  font-family: "Varela Round", sans-serif;
+
+  /* backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.2); */
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+  color: white;
+  font-size: 14px;
+}
+
+a,
+button {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 9px 25px;
+  list-style: none;
+}
+
+.square {
+  max-width: 40rem;
+  max-height: 100vh;
+  /* border: 1px solid white; */
+  display: grid;
+  justify-content: center space-evenly;
+  align-items: center;
+  color: white;
+  padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+.tem-loc {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 0pt;
+  padding: 10px, 0px;
+  text-shadow: 2px 3px #000000;
+}
+
+.tem-loc h1 {
+  display: grid;
+  justify-content: center;
+  font-size: 100px;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.tem-loc span {
+  font-size: 100px;
+  font-weight: 200;
+}
+
+.tem-loc h2 {
+  font-size: 100px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.des {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.both {
+  margin-top: 3rem;
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgb(210, 206, 206);
+  border-left: 1px solid rgb(210, 206, 206);
+  border-bottom: black;
+  border-right: rgba(225, 225, 225, 0.1);
+  border-radius: 1rem;
+}
+
+.search {
+  display: flex;
+  justify-content: end;
+  max-width: 30rem;
+  margin-left: 5rem;
+  padding: 3rem 0;
+}
+
+.search input {
+  border: 1px #ffffff solid;
+  background-color: transparent;
+}
+
+.search placeholder {
+  color: #ffffff;
+}
+
+.search span {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

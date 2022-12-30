@@ -1,8 +1,10 @@
 const bp = require("body-parser");
 const exp = require("express");
 const https = require("https");
+const fs = require("fs");
 const app = exp();
 
+app.use(exp.static("public"));
 app.use(bp.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
