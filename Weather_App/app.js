@@ -41,11 +41,12 @@ app.post("/", function (req, res) {
         "<h1>weather in " + location + " is currently " + des + " like .</h1>"
       );
 
-      res.write("<h1>temperature is " + temp + "</h1>");
-      res.write("<h1>Pressure is " + pressure + "</h1>");
-      res.write("<h1>humidity is " + humidity + "</h1>");
-      res.write("<h1>wind speed is " + wind + "</h1>");
-      res.write("<img src = " + iconurl + ">");
+      // res.write("<h1>temperature is " + temp + "</h1>");
+      // res.write("<h1>Pressure is " + pressure + "</h1>");
+      // res.write("<h1>humidity is " + humidity + "</h1>");
+      // res.write("<h1>wind speed is " + wind + "</h1>");
+      // res.write("<img src = " + iconurl + ">");
+      
       res.send();
     });
   });
