@@ -1,0 +1,5 @@
+ <% if (kindOfDay === "friday" || kindOfDay === "sturday") { %>
+    <h1 style="color: rgb(58, 148, 58)">it is a <%= kindOfDay %></h1>
+    <% } else { %>
+    <h1 style="color: rgb(196, 74, 74)">it is a <%= kindOfDay %></h1>
+    <% } %>
