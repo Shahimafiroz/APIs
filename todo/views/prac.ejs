@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2><%= brumDay %></h2>
+    <h1>Hello Shahima</h1>
+    <h2>Here is todays Schedule</h2>
+    <ul>
+      <li>study</li>
+      <li>exercise</li>
+      <li>shower</li>
+
+      <% for ( var i = 0 ;i<items.length ; i++){ %>
+      <li><%= items[i] %></li>
+      <% } %>
+
+      <form action="/" method="post" name="nextListItems">
+        <input type="text" name="task" placeholder="Enter New Task" />
+        <button type="submit">Submit</button>
+      </form>
+    </ul>
+  </body>
+</html>

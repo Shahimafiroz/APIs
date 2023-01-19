@@ -2,32 +2,28 @@ const exp = require("express");
 const bp = require("body-parser");
 
 const app = exp();
-
-var newTasks = ["buyfood", "cookfood", "eatfood"];
-
+var newtasks = [];
 app.set("view engine", "ejs");
 
 app.use(bp.urlencoded({ extended: true }));
-app.use(exp.static("public"));
 
 app.get("/", function (req, res) {
   var today = new Date();
-  var options = {
+  var opt = {
     weekday: "long",
     day: "numeric",
     month: "long",
   };
-
-  var day = today.toLocaleDateString("en-US", options);
-  res.render("list.ejs", { kindOfDay: day, newListItems: newTasks });
+  var day = today.toLocaleDateString("en-US", opt);
+  res.render("prac.ejs", { brumDay: day, items: newtasks });
 });
 
 app.post("/", function (req, res) {
-  var newTask = req.body.newtask;
-  newTasks.push(newTask);
+  var newtask = req.body.task;
+  newtasks.push(newtask);
   res.redirect("/");
 });
 
 app.listen(3000, function () {
-  console.log("server running on port 3000");
+  console.log("server running");
 });
