@@ -19,8 +19,26 @@ const articleSchema = new mongoose.Schema({
   content: String,
 });
 //mongoose model
-const article = mongoose.model("article", articleSchema);
-//mongoose
+const Article = mongoose.model("Article", articleSchema);
+// GET in REST (getting all the articles)
+
+// app.get("/articles", function (res, req) {
+//   Article.find(function (err, foundArticles) {
+//     // res.send(foundArticles);
+//     console.log(foundArticles);
+//   });
+// });
+
+app.get("/articles", async function (req, res) {
+  try {
+    const foundArticles = await Article.find();
+    console.log(foundArticles);
+    res.send(foundArticles);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal server error");
+  }
+});
 
 app.use(express.static("public"));
 
