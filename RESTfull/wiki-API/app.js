@@ -40,6 +40,8 @@ app.get("/articles", async function (req, res) {
   }
 });
 
+
+/////////////////////////////////////////////////////////////////////////
 app.use(express.static("public"));
 
 app.listen(3000, function () {

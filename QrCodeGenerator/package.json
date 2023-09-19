@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "qrcodegenerator",
+  "version": "1.0.0",
+  "description": "A Simple QR code generator using NODE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahimafiroz/APIs.git"
+  },
+  "author": "Shahima Firoz Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahimafiroz/APIs/issues"
+  },
+  "homepage": "https://github.com/Shahimafiroz/APIs#readme",
+  "dependencies": {
+    "inquirer": "^9.2.11",
+    "qr-image": "^3.2.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
